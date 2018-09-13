@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <title>RoboCam Project | Portfolio of Zihan</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/images/favicon.png">
+  <link rel="alternate" href="/atom.xml" title="Portfolio of Zihan">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="We built a cart that was able to point at one’s face and move forward during our intern at Roboterra. The project was based on Raspberry Pi and Face++.">
+<meta name="keywords" content="Roboterra">
+<meta property="og:type" content="article">
+<meta property="og:title" content="RoboCam Project">
+<meta property="og:url" content="http://lizihan021.github.io/2016/05/12/RoboCamReport/index.html">
+<meta property="og:site_name" content="Portfolio of Zihan">
+<meta property="og:description" content="We built a cart that was able to point at one’s face and move forward during our intern at Roboterra. The project was based on Raspberry Pi and Face++.">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://lizihan021.github.io/pic/robocam.png">
+<meta property="og:image" content="http://lizihan021.github.io/pic/3-31-2.JPG">
+<meta property="og:image" content="http://lizihan021.github.io/pic/3-31-3.PNG">
+<meta property="og:image" content="http://lizihan021.github.io/pic/3-31-4.PNG">
+<meta property="og:updated_time" content="2018-09-13T01:12:16.250Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="RoboCam Project">
+<meta name="twitter:description" content="We built a cart that was able to point at one’s face and move forward during our intern at Roboterra. The project was based on Raspberry Pi and Face++.">
+<meta name="twitter:image" content="http://lizihan021.github.io/pic/robocam.png">
+    
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Titillium+Web" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="/style.css">
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="loading-bar-wrapper">
+  <div id="loading-bar"></div>
+</div>
+
+
+  <script>setLoadingBarProgress(20)</script> 
+  <header class="l_header">
+	<div class='wrapper'>
+		<div class="nav-main container container--flex">
+			<a class="logo flat-box" href='/' >
+				Portfolio of Zihan
+			</a>
+			<div class='menu'>
+				<ul class='h-list'>
+					
+						<li>
+							<a class='flat-box nav-home' href='/'>
+								Home
+							</a>
+						</li>
+					
+						<li>
+							<a class='flat-box nav-about' href='/about'>
+								About
+							</a>
+						</li>
+					
+				</ul>
+				<div class='underline'></div>
+			</div>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="Search" />
+						<span class="icon icon-search"></span>
+					</form>
+				</div>
+			
+			<ul class='switcher h-list'>
+				
+					<li class='s-search'><a href='javascript:void(0)'><span class="icon icon-search flat-box"></span></a></li>
+				
+				<li class='s-menu'><a href='javascript:void(0)'><span class="icon icon-menu flat-box"></span></a></li>
+			</ul>
+		</div>
+		
+		<div class='nav-sub container container--flex'>
+			<a class="logo" class="flat-box" href='javascript:void(0)'>
+				Word of Forks
+			</a>
+
+			<ul class='switcher h-list'>
+				<li class='s-comment'><a href='javascript:void(0)'><span class="icon icon-chat_bubble_outline flat-box"></span></a></li>
+				<li class='s-top'><a href='javascript:void(0)'><span class="icon icon-arrow_upward flat-box"></span></a></li>
+				<li class='s-toc'><a href='javascript:void(0)'><span class="icon icon-format_list_numbered flat-box"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+<aside class="menu-phone">
+	<nav>
+		
+			<a href="/" class="nav-home nav">
+				Home
+			</a>
+		
+			<a href="/about" class="nav-about nav">
+				About
+			</a>
+		
+	</nav>
+</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+  <div class="l_body">
+    <div class='container clearfix'>
+      <div class='l_main'>
+        <article id="post-RoboCamReport"
+  class="post white-box article-type-post"
+  itemscope itemprop="blogPost">
+	<section class='meta'>
+	<h2 class="title">
+  	<a href="/2016/05/12/RoboCamReport/">
+    	RoboCam Project
+    </a>
+  </h2>
+	<time>
+	  May 12, 2016
+	</time>
+	
+	</section>
+	
+		<section class="toc-wrapper"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#System-Implementation"><span class="toc-number">1.</span> <span class="toc-text">System Implementation</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-setup"><span class="toc-number">1.1.</span> <span class="toc-text">1. setup</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#hardware"><span class="toc-number">1.1.1.</span> <span class="toc-text">hardware:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#software"><span class="toc-number">1.1.2.</span> <span class="toc-text">software</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-mechanical-design"><span class="toc-number">1.2.</span> <span class="toc-text">2. mechanical design</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-communication"><span class="toc-number">1.3.</span> <span class="toc-text">3. communication</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-communication-between-pi-and-Face-server"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1 communication between pi and Face++ server</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-communication-between-pi-and-RoboCore"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2 communication between pi and RoboCore</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Main-code"><span class="toc-number">1.4.</span> <span class="toc-text">4. Main code</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Further-Development"><span class="toc-number">1.5.</span> <span class="toc-text">5. Further Development</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Demo"><span class="toc-number">1.6.</span> <span class="toc-text">6. Demo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-Team-Work-Distribution"><span class="toc-number">1.7.</span> <span class="toc-text">7. Team Work Distribution**</span></a></li></ol></li></ol></section>
+	
+	<section class="article typo">
+  	<div class="article-entry" itemprop="articleBody">
+    	<p>We built a cart that was able to point at one’s face and move forward during our intern at Roboterra. The project was based on Raspberry Pi and Face++. </p>
+<p><img src="/pic/robocam.png" alt="robocam"></p>
+<a id="more"></a>
+<h2 id="System-Implementation"><a href="#System-Implementation" class="headerlink" title="System Implementation"></a><strong>System Implementation</strong></h2><h3 id="1-setup"><a href="#1-setup" class="headerlink" title="1. setup"></a><strong>1. setup</strong></h3><h4 id="hardware"><a href="#hardware" class="headerlink" title="hardware:"></a><strong>hardware:</strong></h4><ul>
+<li>Raspberry Pi B+</li>
+<li>Pi Camera</li>
+<li>Robocore</li>
+<li>Servo × 2</li>
+<li>Motor × 2</li>
+<li>Origin Kit</li>
+<li>5v battery</li>
+</ul>
+<p>[Written by Li]</p>
+<h4 id="software"><a href="#software" class="headerlink" title="software"></a><strong>software</strong></h4><ol>
+<li><p>When you buy a raspberrypi, it’s just a bare board without any operating system. Let’s assume you have already installed latest Raspbian OS on your raspberrypi and and have succesfully remote control your pi. If you haven’t yet finished, please follow the instruction below to <strong>initialize your raspberrypi</strong>:<br><a href="http://yesyzq.github.io/2016/01/09/raspberry/" target="_blank" rel="noopener">http://yesyzq.github.io/2016/01/09/raspberry/</a><br>Make sure that you have network environment for raspberry pi to work properly.</p>
+</li>
+<li><p>Go to <a href="http://www.faceplusplus.com/" target="_blank" rel="noopener">http://www.faceplusplus.com/</a> and get an account from that website. Follow the instructions of <strong>Face++</strong> to setup a local API on your pi.<br>In case you are not familiar with <strong>Linux command</strong>:<br><a href="http://yesyzq.github.io/2016/01/17/Linux%E5%91%BD%E4%BB%A4%E4%BB%A5%E5%8F%8A%E5%BF%AB%E6%8D%B7%E9%94%AE%E6%95%B4%E7%90%86/" target="_blank" rel="noopener">here</a><br>You may also refer to any other guide online. There are always abundant resources waiting for you to explore on the internet.</p>
+</li>
+<li><p>Python2 is pre-installed in Raspbian, is you find no python in your OS, try <code>sudo apt-get install python-dev</code> in the console. If it does not work, click here:<br><a href="http://www.eeboard.com/bbs/forum.php?mod=viewthread&amp;tid=1815" target="_blank" rel="noopener">http://www.eeboard.com/bbs/forum.php?mod=viewthread&amp;tid=1815</a></p>
+</li>
+</ol>
+<p>Then you get everything ready to build the project. Have fun exploring!</p>
+<p>[Written by Yu]</p>
+<h3 id="2-mechanical-design"><a href="#2-mechanical-design" class="headerlink" title="2. mechanical design"></a><strong>2. mechanical design</strong></h3><p><strong>Top view:</strong><br><img src="/pic/3-31-2.JPG" alt="Top view"><br><strong>Bottom view:</strong><br><img src="/pic/3-31-3.PNG" alt="Bottom view"><br><strong>Side view:</strong><br><img src="/pic/3-31-4.PNG" alt="Side view"></p>
+<p>[Written by Li]</p>
+<h3 id="3-communication"><a href="#3-communication" class="headerlink" title="3. communication"></a><strong>3. communication</strong></h3><h4 id="3-1-communication-between-pi-and-Face-server"><a href="#3-1-communication-between-pi-and-Face-server" class="headerlink" title="3.1 communication between pi and Face++ server"></a><strong>3.1 communication between pi and Face++ server</strong></h4><p>First of all, you need to capture the image using picamera. Create a python file, type in the following command:<br><code>os.system(&#39;raspistill -o test.jpg -t 1 -w 300 -h 224 -q 50&#39;)</code><br>Feel free to try it out in the console first to see how it works. For detailed information about the command <code>raspistill</code>, click here:<br><a href="http://www.ithao123.cn/content-1549646.html" target="_blank" rel="noopener">http://www.ithao123.cn/content-1549646.html</a></p>
+<p>After capturing the image, you need to send the image to the server in order to extract the information in which the coordinates of faces are located.<br>In the python file, type in the following command:<br><code>tmp = api.detection.detect(img = File(r&#39;hellow.jpg&#39;))</code><br>Read the coordinate of the center of the face<br><code>cent=tmp[&quot;face&quot;][0][&quot;position&quot;][&quot;center&quot;][&quot;x&quot;]</code></p>
+<p>[Written by Yu]</p>
+<h4 id="3-2-communication-between-pi-and-RoboCore"><a href="#3-2-communication-between-pi-and-RoboCore" class="headerlink" title="3.2 communication between pi and RoboCore"></a><strong>3.2 communication between pi and RoboCore</strong></h4><p>We use serial communication to send message from Raspberry Pi to Robocore. Code on Robocore should look like this:<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;Servo.h&gt;</span></span></span><br><span class="line">Servo myservo;</span><br><span class="line"></span><br><span class="line">byte number = <span class="number">0</span>;</span><br><span class="line"><span class="keyword">int</span> angle=<span class="number">90</span>;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">setup</span><span class="params">()</span></span>&#123;</span><br><span class="line">     Serial.begin(<span class="number">9600</span>);</span><br><span class="line">     myservo.attach(<span class="number">9</span>);</span><br><span class="line">     myservo.write(angle);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">loop</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (Serial.available()) &#123;</span><br><span class="line">       number = <span class="number">0</span>;</span><br><span class="line">       number = Serial.read();</span><br><span class="line">       <span class="keyword">if</span>(number == B01101100)&#123; <span class="comment">//if number == 'l'</span></span><br><span class="line">          angle = angle <span class="number">-5</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">else</span> <span class="keyword">if</span>(number == B01110010)&#123; <span class="comment">//if number == 'r'</span></span><br><span class="line">          angle = angle +<span class="number">5</span>;</span><br><span class="line">       &#125;</span><br><span class="line">       myservo.write(angle);</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>Every time when Robocore receives ‘l’, the servo will turn left by 5 degree. When it receive ‘r’, the servo do te opposite. </p>
+<p>[Written by Li]</p>
+<h3 id="4-Main-code"><a href="#4-Main-code" class="headerlink" title="4. Main code"></a><strong>4. Main code</strong></h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line">os.system(<span class="string">'sh run.sh'</span>) <span class="comment">#improt Face ++ apis</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> serial</span><br><span class="line"><span class="keyword">import</span> threading</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"><span class="keyword">from</span> time <span class="keyword">import</span> sleep, ctime</span><br><span class="line">ser = serial.Serial(<span class="string">'/dev/ttyUSB0'</span>, <span class="number">9600</span>, timeout=<span class="number">1</span>) <span class="comment">#need to use this command: ls /dev/tty* to see Robocore is on USB0 or USB1.</span></span><br><span class="line">ser.open()</span><br><span class="line"></span><br><span class="line">last = <span class="number">3</span> <span class="comment">#position of the face in last detection</span></span><br><span class="line">cur = <span class="number">3</span>  <span class="comment">#position of the face in current detection</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">compress</span><span class="params">(x)</span>:</span>  <span class="comment">#classify the position of the face</span></span><br><span class="line">	<span class="keyword">if</span>(x&gt;=<span class="number">40</span>) <span class="keyword">and</span> (x&lt;<span class="number">60</span>):</span><br><span class="line">		<span class="keyword">return</span> <span class="number">3</span></span><br><span class="line">	<span class="keyword">elif</span>(x&gt;=<span class="number">20</span>) <span class="keyword">and</span> (x&lt;<span class="number">40</span>):</span><br><span class="line">		<span class="keyword">return</span> <span class="number">2</span></span><br><span class="line">	<span class="keyword">elif</span>(x&gt;=<span class="number">0</span>) <span class="keyword">and</span> (x&lt;<span class="number">20</span>):</span><br><span class="line">		<span class="keyword">return</span> <span class="number">1</span></span><br><span class="line">	<span class="keyword">elif</span>(x&gt;=<span class="number">60</span>) <span class="keyword">and</span> (x&lt;<span class="number">80</span>):</span><br><span class="line">		<span class="keyword">return</span> <span class="number">4</span></span><br><span class="line">	<span class="keyword">elif</span>(x&gt;=<span class="number">80</span>) <span class="keyword">and</span> (x&lt;=<span class="number">100</span>):</span><br><span class="line">		<span class="keyword">return</span> <span class="number">5</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun_turn</span><span class="params">(turn)</span>:</span> <span class="comment">#serial communication with robocore</span></span><br><span class="line">	<span class="keyword">if</span> turn==<span class="number">1</span>:</span><br><span class="line">		ser.write(<span class="string">"l"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">2</span>:</span><br><span class="line">		ser.write(<span class="string">"ll"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">3</span>:</span><br><span class="line">		ser.write(<span class="string">"lll"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">4</span>:</span><br><span class="line">		ser.write(<span class="string">"llll"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">-1</span>:</span><br><span class="line">		ser.write(<span class="string">"r"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">-2</span>:</span><br><span class="line">		ser.write(<span class="string">"rr"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">-3</span>:</span><br><span class="line">		ser.write(<span class="string">"rrr"</span>)</span><br><span class="line">	<span class="keyword">elif</span> turn==<span class="number">-4</span>:</span><br><span class="line">		ser.write(<span class="string">"rrrr"</span>)</span><br><span class="line">	<span class="keyword">else</span>:</span><br><span class="line">		ser.write(<span class="string">""</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="number">1</span>:</span><br><span class="line">	<span class="keyword">try</span>:</span><br><span class="line">		os.system(<span class="string">'raspistill -o hellow.jpg -t 1 -w 300 -h 224 -q 50'</span>) <span class="comment">#take picture</span></span><br><span class="line">		tmp = api.detection.detect(img = File(<span class="string">r'hellow.jpg'</span>)) <span class="comment">#send requirement to Face++</span></span><br><span class="line">		<span class="keyword">try</span>:</span><br><span class="line">			cent=tmp[<span class="string">"face"</span>][<span class="number">0</span>][<span class="string">"position"</span>][<span class="string">"center"</span>][<span class="string">"x"</span>]</span><br><span class="line">		<span class="keyword">except</span> IndexError: <span class="comment">#in case there is no face</span></span><br><span class="line">			<span class="keyword">continue</span></span><br><span class="line">		cent</span><br><span class="line">		cur = compress(cent)</span><br><span class="line">		turn = cur - last</span><br><span class="line">		fun_turn(turn)</span><br><span class="line">		last = cur</span><br><span class="line">	<span class="keyword">except</span> KeyboardInterrupt: <span class="comment">#to exit</span></span><br><span class="line">		<span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+<p><strong>How to use the code:</strong><br>After you have got the Face++ API files, you should put them in one folder. Then enter that folder by using command <code>cd</code>. Then you should type <code>python</code> and paste the main code into it. </p>
+<p>[Written by Li]</p>
+<h3 id="5-Further-Development"><a href="#5-Further-Development" class="headerlink" title="5. Further Development"></a><strong>5. Further Development</strong></h3><p>However, such kind of implementation is not fast enough to do real-time detection and tracking. There are several ways to improve the current implementation:</p>
+<p><strong>5.1 Localize</strong><br>In face we do not need to rely on the server to do the detection. Since picamera itself can capture OpenCV image(yuv image), it might be faster if we install openCV python on raspberry pi directly and build the detection algorithm locally. (need to solve this problem: Li cannot install OpenCV on his Pi following this instruction:<br><a href="http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/" target="_blank" rel="noopener">http://www.pyimagesearch.com/2015/02/23/install-opencv-and-python-on-your-raspberry-pi-2-and-b/</a>)</p>
+<p><strong>5.2    Multi-thread</strong><br>Multi-threads of the program to utilize the waiting time of Face++ api (need to solve this problem: when two program run <code>raspistill</code> at the same time, the camera will be disabled until next reboot)</p>
+<p>[Written by Yu]</p>
+<h3 id="6-Demo"><a href="#6-Demo" class="headerlink" title="6. Demo"></a>6. Demo</h3><video controls style="width: 100%"><source src="/video/cam.mp4" type="video/mp4"></video>
+
+<h3 id="7-Team-Work-Distribution"><a href="#7-Team-Work-Distribution" class="headerlink" title="7. Team Work Distribution**"></a>7. Team Work Distribution**</h3><p><strong>Yu Zheqing:</strong></p>
+<ul>
+<li>Came up with the whole structure of the system</li>
+<li>Set up Face++ API in Raspberry Pi </li>
+</ul>
+<p><strong>Li Zihan:</strong></p>
+<ul>
+<li>Built the solid structure</li>
+<li>Wrote the main python program and the Robocore program</li>
+<li>Came up with two ways to optimize the system but none of them works</li>
+</ul>
+
+  	</div>
+	  
+	  <div class="article-tags tags">
+      
+        <a href="/tags/Roboterra/">Roboterra</a>
+      
+	  </div>
+    
+		
+	
+		<div class="art-item-footer">
+				
+					<span class="art-item-left"><i class="icon icon-chevron-thin-left"></i>prev：<a href="/2016/05/12/FinalReport/" rel="prev"  title="Roboterra Intern Report">
+						Roboterra Intern Report 
+					</a></span>
+				
+				
+		</div>
+	
+	</section>
+	
+</article>
+<script>
+	window.subData = {
+		title: 'RoboCam Project',
+		tools: true
+	}
+</script>
+
+      </div>
+      <aside class='l_side'>
+        
+  <section class='m_widget about'>
+
+<img class='avatar waves-image' src='/images/avatar.jpg' />
+
+<div class='header'>Zihan Li</div>
+<div class='content'>
+<div class='desc'>Tempora mutantur, nos et mutamur in illis ...</div>
+</div>
+</section>
+
+      </aside>
+      <script>setLoadingBarProgress(60);</script>
+    </div>
+  </div>
+  <footer id="footer" class="clearfix">
+
+	<div class="social-wrapper">
+  	
+      
+        <a href="https://github.com/lizihan021" class="social github"
+          target="_blank" rel="external">
+          <span class="icon icon-github"></span>
+        </a>
+      
+        <a href="https://www.linkedin.com/in/zihan-li-927ba5126" class="social linkedin"
+          target="_blank" rel="external">
+          <span class="icon icon-linkedin"></span>
+        </a>
+      
+    
+  </div>
+  
+  <div>Theme <a href='https://github.com/stkevintan/hexo-theme-material-flow' class="codename">MaterialFlow</a> designed by <a href="http://keyin.me/" target="_blank">Kevin Tan</a>.</div>
+  
+</footer>
+
+
+  <script>setLoadingBarProgress(80);</script>
+  
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<script src="/js/jquery.fitvids.js"></script>
+<script>
+	var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+	var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+	var ALGOLIA_API_KEY = "";
+	var ALGOLIA_APP_ID = "";
+	var ALGOLIA_INDEX_NAME = "";
+  var AZURE_SERVICE_NAME = "";
+  var AZURE_INDEX_NAME = "";
+  var AZURE_QUERY_KEY = "";
+  var BAIDU_API_ID = "";
+  var SEARCH_SERVICE = "hexo";
+  var ROOT = "/"||"/";
+  if(!ROOT.endsWith('/'))ROOT += '/';
+</script>
+<script src="/js/search.js"></script>
+<script src="/js/app.js"></script>
+
+
+  <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
