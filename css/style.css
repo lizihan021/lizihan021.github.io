@@ -495,14 +495,6 @@ blockquote {
   line-height: 20px;
   padding: 5rem 0 2rem;
 }
-.container > div > footer a {
-  color: #ccc;
-  border-color: #ccc;
-}
-.container > div > footer a:hover {
-  color: #666;
-  border-color: #666;
-}
 .Index,
 .TagArticle {
   padding: 7em 0 0 0;
