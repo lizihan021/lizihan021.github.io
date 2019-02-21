@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>Umich Website Spider</title>
+      <link href="/2019/02/20/umich-spider/"/>
+      <url>/2019/02/20/umich-spider/</url>
+      <content type="html"><![CDATA[<p>University of Michigan was planning to migrate its website content from Plone CMS to WordPress. I wrote a web spider to collect all posts from the original website during my intern to help the migration. </p><p><img src="/pic/umich-spider/1.png" alt="umich web spider"></p>]]></content>
+      
+      <categories>
+          
+          <category> blogs </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Roflcopter - Gesture Based Quad-copter Controller</title>
       <link href="/2017/06/19/roflcopter/"/>
       <url>/2017/06/19/roflcopter/</url>
@@ -35,14 +50,11 @@
       <url>/2017/06/18/umich-web/</url>
       <content type="html"><![CDATA[<p>University of Michigan was planning to migrate its website content from Plone CMS to WordPress. Developed part of the Umich WordPress theme “Menc” during my intern. </p><p><img src="/pic/umich-web/1.png" alt="umich web theme"></p>]]></content>
       
-      
-    </entry>
-    
-    <entry>
-      <title>Umich Website Spider</title>
-      <link href="/2017/06/16/umich-spider/"/>
-      <url>/2017/06/16/umich-spider/</url>
-      <content type="html"><![CDATA[<p>University of Michigan was planning to migrate its website content from Plone CMS to WordPress. I wrote a web spider to collect all posts from the original website during my intern to help the migration. </p><p><img src="/pic/umich-spider/1.png" alt="umich web spider"></p>]]></content>
+      <categories>
+          
+          <category> website </category>
+          
+      </categories>
       
       
     </entry>

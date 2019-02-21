@@ -699,6 +699,10 @@ blockquote {
 .menu > ul {
   padding-top: 2em;
 }
+.sidetitle {
+  margin-top: 40px;
+  font-size: 2em;
+}
 .avatar {
   height: 180px;
   background-color: #333;
