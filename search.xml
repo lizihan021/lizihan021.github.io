@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>数据密集型应用系统设计2021-8-30</title>
+      <link href="/2021/08/30/%E6%95%B0%E6%8D%AE%E5%AF%86%E9%9B%86%E5%9E%8B%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A12021-8-30/"/>
+      <url>/2021/08/30/%E6%95%B0%E6%8D%AE%E5%AF%86%E9%9B%86%E5%9E%8B%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A12021-8-30/</url>
+      <content type="html"><![CDATA[<p>负载可以用负载参数来描述，例子：</p><ol><li>web server 每秒请求</li><li>数据库中写入的比例</li><li>聊天室同时活动用户数</li><li>缓存命中率</li></ol><span id="more"></span><p>有时平均值重要，有时峰值重要。</p><p>例子：twitter<br>用户可以推送新消息到所有关注者，平均大约4.6K req/s。峰值12K req/s。<br>有两种方案：</p><ol><li>存入关系数据库，一个用户需要看他的时间线的时候去db里query</li><li>对每个用户的时间线维护一个缓存，发推时直接存入</li></ol><p>最后twitter结合了两个方案，对于一般用户的帖子，采取方法二，但是对于关注者众多的名人，采用方案一。</p><p>latency usually refer to time spent on processing<br>response time usually refer to end to end time duration between a user’s query and its response. </p><p>Servie Level Agreements (SLA) might be used to enfore service quality for customer.</p><p>响应时间每增加100ms，销售额就会下降百分之1.</p><p>快速迭代推出产品功能往往比投入精力来应对不可知的扩展性更为重要。</p><p>可维护性：</p><ol><li>可运维性</li><li>简单性</li><li>可塑性</li></ol><p>一个优秀的运维团队至少负责以下内容：</p><ol><li>监视系统的健康状况，并在服务出现异常时快速恢复</li><li>跟踪问题的原因</li><li>保持软件和平台最新，例如打安全补丁</li><li>了解不同的系统如何相互影响，避免执行破坏性的操作</li><li>预测未来可能的问题</li><li>建立部署，配置管理等工具包</li><li>平台迁移</li><li>monitor 配置</li><li>制定流程</li><li>保持知识传承</li></ol><p>简单性：抽象</p><p>可塑性：micro services</p><p>End at page 33</p>]]></content>
+      
+      <categories>
+          
+          <category> blogs </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>数据密集型应用系统设计2021-8-29</title>
       <link href="/2021/08/29/%E6%95%B0%E6%8D%AE%E5%AF%86%E9%9B%86%E5%9E%8B%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A12021-8-29/"/>
       <url>/2021/08/29/%E6%95%B0%E6%8D%AE%E5%AF%86%E9%9B%86%E5%9E%8B%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A12021-8-29/</url>
