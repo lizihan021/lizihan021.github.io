@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数据密集型应用系统设计2021-8-29 | Zihan Li</title>
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(/assets/bg.jpg)">
+        <div class='av-pic' style="background-image: url(/assets/logo.jpg)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div class='sidetitle'>Zihan Li</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/blogs/" class="Btn">
+              <li>Blogs</li>
+            </a>  
+          
+            <a href="/about/" class="Btn">
+              <li>About</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Timeline</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+            
+                <a target="_blank" rel="noopener" href="https://github.com/lizihan021">
+                    <img src="/assets/github.svg" />
+                </a>
+            
+        
+            
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/zihan-li-927ba5126/">
+                    <img src="/assets/linkedin.svg" />
+                </a>
+            
+        
+            
+                <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=8u4uk0sAAAAJ&hl=en">
+                    <img src="/assets/googlescholar.svg" />
+                </a>
+            
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>数据密集型应用系统设计2021-8-29</h1>
+    </header>
+
+    <section>
+      <p>数据密集型应用系统模块：</p>
+<ol>
+<li>数据库</li>
+<li>高速缓存</li>
+<li>索引</li>
+<li>流处理</li>
+<li>批处理</li>
+</ol>
+<p>大多软件系统的三个重要问题：</p>
+<ol>
+<li>可靠性</li>
+<li>可扩展性</li>
+<li>可维护性</li>
+</ol>
+<span id="more"></span>
+
+<p>可靠性的典型期望：</p>
+<ol>
+<li>执行用户期望的功能</li>
+<li>容忍用户不正确的操作和错误</li>
+<li>性能可以应对典型场景，负载压力和数据量</li>
+<li>防止任何未授权的访问和滥用</li>
+</ol>
+<p>硬件故障类型：<br>硬盘平均无故障时间MTTF 10~50 年， 因此在一个10000个硬盘的阵列中，平均每天会有一个硬盘故障, 解决的办法是增加硬件冗余。其他硬件故障包括：断电，断网，内存故障，cpu计算错误</p>
+<p>软件错误：<br>more test please</p>
+<p>如何减少人为的失误：</p>
+<ol>
+<li>以最小出错的方式来设计系统，例如精心设计的抽象层，api和管理界面。是的做正确的事很轻松而搞坏东西很复杂</li>
+<li>分离容易出错的部分，提供测试沙箱</li>
+<li>test</li>
+<li>当出现人为错误时，提供快速的恢复机制</li>
+<li>telemetry</li>
+<li>管理流程以及培训</li>
+</ol>
+<p>End at page 18</p>
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            Published on&nbsp;
+            <time datetime="2021-08-29T07:00:00.000Z" itemprop="datePublished">
+              2021-08-29
+            </time>
+          </div>
+          
+            <div>
+              Author: Li Zihan
+            </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2016 - Zihan Li </div>
+    <div>
+    Powered by Hexo
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/pager/dist/singlepager.js"></script>
+
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>数据密集型应用系统设计2021-8-30 | Zihan Li</title>
+  
+  
+  <!--link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css"-->
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/highlight.js/9.10.0/styles/github-gist.min.css">
+
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+<div class="Shell">
+    <aside class='SideBar'>
+    <section class='avatar' style="background-image: url(/assets/bg.jpg)">
+        <div class='av-pic' style="background-image: url(/assets/logo.jpg)">
+        </div>
+    </section>
+    <section class='menu'>
+        <div class='sidetitle'>Zihan Li</div>
+        
+        <ul>
+          
+            <a href="/" class="Btn">
+              <li>Home</li>
+            </a>  
+          
+            <a href="/blogs/" class="Btn">
+              <li>Blogs</li>
+            </a>  
+          
+            <a href="/about/" class="Btn">
+              <li>About</li>
+            </a>  
+          
+            <a href="/archives/" class="Btn">
+              <li>Timeline</li>
+            </a>  
+          
+        </ul>
+    </section>
+    <section class="media">
+        
+            
+                <a target="_blank" rel="noopener" href="https://github.com/lizihan021">
+                    <img src="/assets/github.svg" />
+                </a>
+            
+        
+            
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/zihan-li-927ba5126/">
+                    <img src="/assets/linkedin.svg" />
+                </a>
+            
+        
+            
+                <a target="_blank" rel="noopener" href="https://scholar.google.com/citations?user=8u4uk0sAAAAJ&hl=en">
+                    <img src="/assets/googlescholar.svg" />
+                </a>
+            
+        
+    </section>
+</aside>
+
+    <div class="container">
+        <div data-pager-shell>
+            <div>
+  <article class='ContentView'>
+    <header class='PageTitle'>
+        <h1>数据密集型应用系统设计2021-8-30</h1>
+    </header>
+
+    <section>
+      <p>负载可以用负载参数来描述，例子：</p>
+<ol>
+<li>web server 每秒请求</li>
+<li>数据库中写入的比例</li>
+<li>聊天室同时活动用户数</li>
+<li>缓存命中率</li>
+</ol>
+<span id="more"></span>
+
+<p>有时平均值重要，有时峰值重要。</p>
+<p>例子：twitter<br>用户可以推送新消息到所有关注者，平均大约4.6K req&#x2F;s。峰值12K req&#x2F;s。<br>有两种方案：</p>
+<ol>
+<li>存入关系数据库，一个用户需要看他的时间线的时候去db里query</li>
+<li>对每个用户的时间线维护一个缓存，发推时直接存入</li>
+</ol>
+<p>最后twitter结合了两个方案，对于一般用户的帖子，采取方法二，但是对于关注者众多的名人，采用方案一。</p>
+<p>latency usually refer to time spent on processing<br>response time usually refer to end to end time duration between a user’s query and its response. </p>
+<p>Servie Level Agreements (SLA) might be used to enfore service quality for customer.</p>
+<p>响应时间每增加100ms，销售额就会下降百分之1.</p>
+<p>快速迭代推出产品功能往往比投入精力来应对不可知的扩展性更为重要。</p>
+<p>可维护性：</p>
+<ol>
+<li>可运维性</li>
+<li>简单性</li>
+<li>可塑性</li>
+</ol>
+<p>一个优秀的运维团队至少负责以下内容：</p>
+<ol>
+<li>监视系统的健康状况，并在服务出现异常时快速恢复</li>
+<li>跟踪问题的原因</li>
+<li>保持软件和平台最新，例如打安全补丁</li>
+<li>了解不同的系统如何相互影响，避免执行破坏性的操作</li>
+<li>预测未来可能的问题</li>
+<li>建立部署，配置管理等工具包</li>
+<li>平台迁移</li>
+<li>monitor 配置</li>
+<li>制定流程</li>
+<li>保持知识传承</li>
+</ol>
+<p>简单性：抽象</p>
+<p>可塑性：micro services</p>
+<p>End at page 33</p>
+
+
+      
+
+    </section>
+    
+      <section class='ArticleMeta'>
+          <div>
+            Published on&nbsp;
+            <time datetime="2021-08-30T07:00:00.000Z" itemprop="datePublished">
+              2021-08-30
+            </time>
+          </div>
+          
+            <div>
+              Author: Li Zihan
+            </div>
+          
+      </section>
+    
+    
+</article>
+
+  
+</div>
+
+            <footer>
+    <div>© 2016 - Zihan Li </div>
+    <div>
+    Powered by Hexo
+    </div>
+</footer>
+
+        </div>
+    </div>
+</div>
+
+<script src="/js/pager/dist/singlepager.js"></script>
+
+<script>
+var sp = new Pager('data-pager-shell')
+
+</script>
+</body>
+</html>
