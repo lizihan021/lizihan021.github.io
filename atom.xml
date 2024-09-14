@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://lizihan021.github.io/"/>
-  <updated>2024-09-08T04:25:02.118Z</updated>
+  <updated>2024-09-14T20:23:43.679Z</updated>
   <id>http://lizihan021.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Card Gamme</title>
+    <link href="http://lizihan021.github.io/2024/09/14/ylgy/"/>
+    <id>http://lizihan021.github.io/2024/09/14/ylgy/</id>
+    <published>2024-09-15T06:21:22.000Z</published>
+    <updated>2024-09-14T20:23:43.679Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="/games/ylgy/">Card Game</a></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;a href=&quot;/games/ylgy/&quot;&gt;Card Game&lt;/a&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+      <category term="gamee" scheme="http://lizihan021.github.io/categories/gamee/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>数据密集型应用系统设计2021-9-5</title>
