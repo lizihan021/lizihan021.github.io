@@ -105,7 +105,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -761,12 +762,9 @@ blockquote {
     width: 100%;
   }
   .menu > ul {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-pack: center;
-        justify-content: center;
+    align-items: center;
+    justify-content: center;
     width: 50%;
     min-width: 280px;
     margin: 0 auto;
@@ -775,8 +773,7 @@ blockquote {
   .Btn > li {
     margin: 1em 0;
     padding: 0;
-    -ms-flex: 1;
-        flex: 1;
+    flex: 1;
     border-right: none;
     min-width: 70px;
   }

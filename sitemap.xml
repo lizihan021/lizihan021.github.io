@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://lizihan021.github.io/2016/06/20/marty/</loc>
+    <loc>http://lizihan021.github.io/2019/06/20/marty/</loc>
     
-    <lastmod>2024-09-08</lastmod>
+    <lastmod>2024-09-14</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://lizihan021.github.io/about/index.html</loc>
+    
+    <lastmod>2024-09-14</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -83,15 +92,6 @@
   </url>
   
   <url>
-    <loc>http://lizihan021.github.io/about/index.html</loc>
-    
-    <lastmod>2024-09-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://lizihan021.github.io/blogs/index.html</loc>
     
     <lastmod>2024-09-08</lastmod>
@@ -103,7 +103,7 @@
 
   <url>
     <loc>http://lizihan021.github.io/</loc>
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -113,28 +113,28 @@
   
   <url>
     <loc>http://lizihan021.github.io/categories/Robotics/</loc>
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://lizihan021.github.io/categories/Embedded-System/</loc>
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://lizihan021.github.io/categories/website/</loc>
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://lizihan021.github.io/categories/blogs/</loc>
-    <lastmod>2024-09-09</lastmod>
+    <lastmod>2024-09-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
